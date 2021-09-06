@@ -38,3 +38,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "algoliasearch-rails", "~> 2.1"
+gem "kontent-delivery-sdk-ruby", "~> 2.0"
+gem "dotenv-rails", "~> 2.7"
