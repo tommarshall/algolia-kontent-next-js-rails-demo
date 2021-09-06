@@ -3,7 +3,7 @@ class CreateArticles < ActiveRecord::Migration[6.1]
     create_table :articles do |t|
       t.string :title
       t.text :body
-      t.string :tags
+      t.string :tags, array: true, default: []
       t.string :author
       t.datetime :published_at
       t.string :image
