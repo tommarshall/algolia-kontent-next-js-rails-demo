@@ -69,7 +69,12 @@ export default class extends React.Component {
         </header>
         <main>
           <div className="menu">
-            <RefinementList attribute="categories" />
+            <h2>Authors</h2>
+            <RefinementList attribute="author" />
+            <h2>Tags</h2>
+            <RefinementList attribute="tags" />
+            <h2>Est. Read Time</h2>
+            <RefinementList attribute="estimated_reading_time_human_readable" />
           </div>
           <div className="results">
             <Hits hitComponent={HitComponent} />
