@@ -8,8 +8,8 @@ import { findResultsState } from 'react-instantsearch-dom/server';
 import { Head, App } from '../components';
 
 const searchClient = algoliasearch(
-  'latency',
-  '6be0576ff61c053d5f9a3225e2a90f76'
+  '<your Application ID value here>',
+  '<your Search-Only API Key value here>'
 );
 
 const updateAfter = 700;
