@@ -24,7 +24,7 @@ const searchStateToURL = searchState =>
 
 const DEFAULT_PROPS = {
   searchClient,
-  indexName: 'instant_search',
+  indexName: "Article",
 };
 
 class Page extends React.Component {
