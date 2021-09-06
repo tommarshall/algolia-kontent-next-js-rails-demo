@@ -19,16 +19,19 @@ const HitComponent = ({ hit }) => (
     </div>
     <div className="hit-content">
       <div>
-        <Highlight attribute="name" hit={hit} />
-        <span> - ${hit.price}</span>
-        <span> - {hit.rating} stars</span>
+        <a href={`/blog/${hit.url_slug}`}>
+          <Highlight attribute="title" hit={hit} />
+        </a>
       </div>
-      <div className="hit-type">
-        <Highlight attribute="type" hit={hit} />
+      <hr />
+      <div className="hit-author">
+        <span>
+          By&nbsp;
+          <Highlight attribute="author" hit={hit} />
+        </span>
+        <hr />
       </div>
-      <div className="hit-description">
-        <Highlight attribute="description" hit={hit} />
-      </div>
+      <div>Est. Read Time: {hit.estimated_reading_time_mins} mins</div>
     </div>
   </div>
 );
